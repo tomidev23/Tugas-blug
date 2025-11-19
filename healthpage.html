@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> </head>
+    <title>The News - Health News</title>
+    <style>
+body {
+    font-family: serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px 0;
+}
+
+
+.header {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px 0 0 0;
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85em;
+    padding-bottom: 10px;
+}
+
+.menu-search {
+    display: flex;
+    gap: 15px;
+}
+
+.logo h1 {
+    font-family: Georgia, serif; 
+    font-size: 3em;
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-weight: 900;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em;
+    padding: 5px 0;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #000;
+}
+
+.main-nav a.active {
+    border-bottom: 2px solid #e74c3c;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.health-news-header h2 {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+}
+
+.article-card {
+    background-color: #fff; 
+}
+
+.article-image-placeholder {
+    width: 100%;
+    padding-top: 60%; 
+    background-color: #ddd; 
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0; 
+}
+
+.article-card h3 {
+    font-family: Georgia, serif;
+    font-size: 1.1em;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.article-meta {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.footer .logo h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.footer-bottom p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    color: #555;
+    margin: 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #555;
+    font-size: 1.2em; 
+}
+</style>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <span class="date">📅 Tuesday, October 29, 2024</span>
+            <div class="menu-search">
+                <span class="menu">The Menu ></span>
+                <span class="search">🔍</span>
+            </div>
+        </div>
+        <div class="logo">
+            <h1>The NEWS*</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="#">World News</a>
+            <a href="#">Politics</a>
+            <a href="#">Business</a>
+            <a href="#">Technology</a>
+            <a href="#" class="active">Health</a>
+            <a href="#">Sports</a>
+            <a href="#">Culture</a>
+            <a href="#">Podcast</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="health-news-header">
+            <h2>HEALTH NEWS</h2>
+        </section>
+
+        <section class="articles-grid">
+            <article class="article-card">
+                <div class="article-image-placeholder">
+                                    </div>
+                <h3>Tailoring treatments to individual genetic profiles</h3>
+                <p class="article-meta">Guy Hawkins — Sep 9, 2024</p>
+            </article>
+
+            <article class="article-card">
+                <div class="article-image-placeholder">
+                                    </div>
+                <h3>How technology is revolutionizing patient experiences</h3>
+                <p class="article-meta">Guy Hawkins — Sep 9, 2024</p>
+            </article>
+
+            <article class="article-card">
+                <div class="article-image-placeholder">
+                                    </div>
+                <h3>Analyzing the effects of global health policies</h3>
+                <p class="article-meta">Guy Hawkins — Sep 9, 2024</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="logo">
+            <h1>The NEWS*</h1>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span class="copyright">© Copyright 2024 - The News - All rights reserved</span>
+                <span class="social-links">
+                    <a href="#">📷</a>
+                    <a href="#">🟦</a>
+                    <a href="#">🐦</a>
+                    <a href="#">▶️</a>
+                </span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
