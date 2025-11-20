@@ -6,154 +6,197 @@
     <title>Kelompok 9 - Popular Linux</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Gaya kustom untuk membatasi lebar konten */
         .container-max {
             max-width: 900px;
         }
     </style>
 </head>
-<body>
-    <nav>
-        <ul class="flex space-x-4 p-4 bg-gray-200 rounded-b-lg shadow-md">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Team.html">Team</a></li>
-        </ul>
-    </nav>
+<body class="bg-white text-gray-800">
 
-    <div class="title p-4 font-bold text-3xl">
-        <h1 class="text-2xl font-bold">Popular Linux</h1>
-    </div>
-    <div id="popular-linux" class="flex space-x-4 p-4">
-        <img src="img/arch.png" alt="arch linux" class="w-32 h-32">
-        <a href="#arch">Arch Linux</a>
-        </img>
-        <img src="img/ubuntu.png" alt="ubuntu linux" class="w-32 h-32">
-        <a href="#Ubuntu"> Ubuntu</a>
-        </img>
-        <img src="img/Mint.png" alt="debian linux" class="w-32 h-32">
-        <a href="#debian">Debian</a>
-        </img>
-        <img src="img/kali.png" alt="kali linux" class="w-32 h-32">
-        <a href="#kali">Kali Linux</a>
-        </img>
-    </div>
+<!-- NAVBAR -->
+<nav id="navbar" class="bg-gray-200 shadow-md rounded-b-lg mb-6 sticky top-0 z-50 transition-shadow duration-300">
+    <ul class="flex justify-center space-x-6 p-4">
+        <li><a href="index.html" class="text-sm font-medium hover:text-blue-600 transition-colors duration-200">Home</a></li>
+        <li><a href="Team.html" class="text-sm font-medium hover:text-blue-600 transition-colors duration-200">Team</a></li>
+    </ul>
+</nav>
 
-        <section class="title mb-8">
+
+    <div class="container-max mx-auto px-6 py-6">
+
+        <!-- PENGERTIAN LINUX -->
+        <section class="mb-8">
             <h1 class="text-xl font-bold border-b border-gray-300 pb-2">PENGERTIAN LINUX</h1>
-            <div class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-                <div class="md:col-span-1 flex justify-center items-center">
+
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+                <div class="flex justify-center md:col-span-1">
                     <img src="img/linux.png" alt="Linux Logo" class="w-48 h-48 object-contain">
                 </div>
-                <div class="md:col-span-2">
-                    <p class="text-xs leading-relaxed text-gray-700">Linux adalah sistem operasi berbasis open source yang memungkinkan siapa saja untuk menggunakan, memodifikasi, dan mendistribusikannya secara bebas. Sistem ini berfungsi sebagai dasar bagi berbagai perangkat, serupa dengan peran sistem operasi lain, tetapi memiliki fleksibilitas tinggi karena kode sumbernya terbuka.</p>
-                    <h2 class="text-sm font-semibold mt-3">Riwayat singkat Linux:</h2>
+
+                <div class="md:col-span-2 text-justify">
+                    <p class="text-xs leading-relaxed text-gray-700">
+                        Linux adalah sistem operasi berbasis open source yang memungkinkan siapa saja untuk menggunakan,
+                        memodifikasi, dan mendistribusikannya secara bebas. Sistem ini berfungsi sebagai dasar bagi berbagai
+                        perangkat, serupa dengan peran sistem operasi lain, tetapi memiliki fleksibilitas tinggi karena kode
+                        sumbernya terbuka.
+                    </p>
+
+                    <h2 class="text-sm font-semibold mt-3">Riwayat Singkat Linux:</h2>
                     <ul class="list-disc list-inside text-xs text-gray-700 mt-2">
-                        <li>Linux dikembangkan oleh Linus Torvalds pada tahun 1991 sebagai proyek pribadi ketika ia masih menjadi mahasiswa di Finlandia.</li>
-                        <li>Ia merancang sebuah kernel sistem operasi yang dapat digunakan secara gratis dan dikembangkan bersama komunitas.</li>
-                        <li>Kernel tersebut kemudian dipadukan dengan berbagai perangkat lunak dari proyek GNU sehingga membentuk sistem operasi yang lengkap.</li>
-                        <li>Setelah itu muncul berbagai distribusi seperti Debian, Red Hat, Slackware, Ubuntu, dan Arch Linux.</li>
-                        <li>Saat ini Linux digunakan secara luas pada server, superkomputer, perangkat IoT, ponsel berbasis Android, serta oleh para pengguna komputer sebagai sistem operasi harian.</li>
+                        <li>Dikembangkan oleh Linus Torvalds pada 1991 sebagai proyek pribadi.</li>
+                        <li>Kernel Linux digabung dengan perangkat lunak GNU sehingga menjadi sistem operasi lengkap.</li>
+                        <li>Muncul berbagai distribusi seperti Debian, Red Hat, Slackware, Ubuntu, dan Arch Linux.</li>
+                        <li>Digunakan secara luas pada server, superkomputer, IoT, Android, dan desktop.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <div class="title mb-8">
+        <!-- TITLE LINUX POPULER -->
+        <div class="mb-8">
             <h1 class="text-xl font-bold border-b border-gray-300 pb-2">LINUX POPULER</h1>
         </div>
-        
-        <main>
-            <section id="arch" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 border-b border-gray-200 pb-6">
-                <div class="md:col-span-1 flex flex-col items-start space-y-2">
-                    <div class="flex items-center space-x-2 mb-2">
-                        <img src="img/arch.png" alt="Arch Linux Logo" class="w-8 h-8">
-                        <span class="text-sm font-semibold">Arch</span>
-                        <span class="text-sm text-red-500 font-semibold">Linux</span>
-                    </div>
-                    <img src="img/arch.png" alt="Arch Linux" class="w-48 h-48 object-contain">
-                    <h2 class="text-lg font-bold mt-4">Arch Linux</h2>
-                    <div style="text-align: justify">
-                    <p class="text-xs text-gray-600 mt-1">Arch Linux adalah sistem operasi terdistribusi yang ringan, sederhana, dan modern dengan sifat minimal dan berpusat pada pengguna untuk menyesuaikan dan mengontrol sistem dalam banyak hal, sehingga pengguna dapat menyesuaikan berbagai bagian sistem sambil mendapatkan manfaat dari sistem yang terintegrasi. </p>
-                    </div>
+
+        <!-- ARCH LINUX -->
+        <section id="arch" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 border-b border-gray-200 pb-6">
+            <div class="md:col-span-1 flex flex-col items-start space-y-2">
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="img/arch.png" alt="Arch Linux Logo" class="w-8 h-8">
+                    <span class="text-sm font-semibold">Arch</span>
+                    <span class="text-sm font-semibold text-red-500">Linux</span>
                 </div>
 
-                <div class="md:col-span-2 text-sm space-y-4">
-                    <div style="text-align: justify">
-                        <div class="flex items-center space-x-2 mb-1">
-                            <span class="text-sm font-bold">Linux</span>
-                            <span class="text-sm font-bold text-red-500">History</span>
-                            <img src="img/some_icon.png" alt="Icon" class="w-4 h-4 hidden"> </div>
-                        <p class="text-xs leading-relaxed text-gray-700">Pada 11 Maret 2002, <span class="text-sm font-bold text-blue-500">Judd Vinet</span> terinspirasi oleh kesederhanaan dan keeleganan yang dimiliki oleh Slackware, distribusi Linux di Polandia dan CRUX, ia pun mulai mengembangkan Arch Linux. Namun karena kurangnya program pengelola paket menjadi masalah utama, ia memutuskan untuk menulis pengelola paket khusus untuk Arch Linux yang disebut Pacman untuk mengontrol dan memeriksa instalasi, penghapusan, dan pembaruan paket perangkat lunak secara otomatis.</p>
-                        </div>
-                        <div style="text-align: justify">
-                        <h3 class="font-bold mb-1">Package manager</h3>
-                        <p class="text-xs leading-relaxed text-gray-700">Arch Linux menggunakan Pacman (Package Manager), digunakan untuk menginstal, menghapus, dan memperbarui paket perangkat lunak. Ia menangani dependensi, melakukan sinkronisasi dengan repositori jarak jauh, dan dapat digunakan untuk mengelola paket repositori resmi dan paket yang dibuat pengguna. Meskipun tidak ada manajer paket grafis bawaan, banyak alat GUI yang mudah digunakan tersedia untuk Arch Linux, seperti Pamac dan Octopi.</p>
-                        </div>
+                <img src="img/arch.png" alt="Arch Linux" class="w-48 h-48 object-contain">
+
+                <h2 class="text-lg font-bold mt-4">Arch Linux</h2>
+
+                <p class="text-xs text-gray-600 text-justify">
+                    Arch Linux adalah sistem operasi yang ringan dan minimalis, berpusat pada pengguna sehingga dapat
+                    menyesuaikan banyak aspek sistem secara bebas.
+                </p>
+            </div>
+
+            <div class="md:col-span-2 text-sm space-y-4 text-justify">
+                <div>
+                    <div class="flex items-center space-x-2 mb-1">
+                        <span class="text-sm font-bold">Linux</span>
+                        <span class="text-sm font-bold text-red-500">History</span>
                     </div>
-            </section>
-            
-            <section id="ubuntu" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 border-b border-gray-200 pb-6">
-                <div class="md:col-span-1 flex flex-col items-start space-y-2">
-                    <h2 class="text-lg font-bold mt-4">Ubuntu</h2>
-                    <img src="img/ubuntu.png" alt="Ubuntu Linux" class="w-48 h-48 object-contain">
-                    <p class="text-xs text-gray-600 mt-1">Ubuntu is a popular, user-friendly, and community-driven Linux distribution based on Debian. It's often recommended for beginners.</p>
+                    <p class="text-xs leading-relaxed text-gray-700">
+                        Pada 11 Maret 2002, <span class="font-bold text-blue-500">Judd Vinet</span> mulai mengembangkan Arch Linux
+                        terinspirasi dari Slackware dan CRUX. Ia kemudian menulis Pacman, pengelola paket yang menjadi ciri khas
+                        Arch Linux.
+                    </p>
                 </div>
 
-                <div class="md:col-span-2 text-sm space-y-4">
-                    <div>
-                        <h3 class="font-bold mb-1">Based on Debian</h3>
-                        <p class="text-xs leading-relaxed text-gray-700">Ubuntu is primarily based on Debian's architecture and package management system (APT). It was created by Canonical Ltd. and first released in 2004.</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold mb-1">Desktop Environment</h3>
-                        <p class="text-xs leading-relaxed text-gray-700">The default desktop environment for Ubuntu is **GNOME**, but various official flavors use different environments like KDE (Kubuntu), XFCE (Xubuntu), and MATE (Ubuntu MATE).</p>
-                    </div>
+                <div>
+                    <h3 class="font-bold mb-1">Package Manager</h3>
+                    <p class="text-xs leading-relaxed text-gray-700">
+                        Arch menggunakan Pacman untuk menginstal, menghapus, dan memperbarui paket. Banyak GUI tersedia seperti
+                        Pamac dan Octopi meskipun Pacman sendiri berbasis CLI.
+                    </p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="mint" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 border-b border-gray-200 pb-6">
-                <div class="md:col-span-1 flex flex-col items-start space-y-2">
-                    <h2 class="text-lg font-bold mt-4">Linux Mint</h2>
-                    <img src="img/Mint.png" alt="Linux Mint Logo" class="w-48 h-48 object-contain">
-                    <p class="text-xs text-gray-600 mt-1">Linux Mint is an elegant, easy-to-use, and community-driven operating system based on Ubuntu and Debian.</p>
-                </div>
+        <!-- UBUNTU -->
+        <section id="ubuntu" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 border-b border-gray-200 pb-6">
+            <div class="md:col-span-1 flex flex-col items-start space-y-2">
+                <h2 class="text-lg font-bold mt-4">Ubuntu</h2>
+                <img src="img/ubuntu.png" alt="Ubuntu Linux" class="w-48 h-48 object-contain">
+                <p class="text-xs text-gray-600 mt-1 text-justify">
+                    Ubuntu adalah distribusi Linux populer dan ramah pengguna berbasis Debian. Sering direkomendasikan untuk pemula.
+                </p>
+            </div>
 
-                <div class="md:col-span-2 text-sm space-y-4">
-                    <div>
-                        <h3 class="font-bold mb-1">DEFAULTS</h3>
-                        <p class="text-xs leading-relaxed text-gray-700">Mint offers a classical desktop experience and comes bundled with multimedia support and essential tools, making it very popular for users transitioning from Windows or macOS.</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold mb-1">Desktop Environment</h3>
-                        <p class="text-xs leading-relaxed text-gray-700">Its main edition uses the **Cinnamon** desktop environment, which is known for its traditional and highly customizable interface.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="kali" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 border-b border-gray-200 pb-6">
-                <div class="md:col-span-1 flex flex-col items-start space-y-2">
-                    <h2 class="text-lg font-bold mt-4">Kali Linux</h2>
-                    <img src="img/kali.png" alt="Kali Linux" class="w-48 h-48 object-contain">
-                    <p class="text-xs text-gray-600 mt-1">Kali Linux is a Debian-derived distribution designed for digital forensics and penetration testing.</p>
+            <div class="md:col-span-2 text-sm space-y-4 text-justify">
+                <div>
+                    <h3 class="font-bold mb-1">Based on Debian</h3>
+                    <p class="text-xs leading-relaxed text-gray-700">
+                        Ubuntu menggunakan sistem manajemen paket Debian (APT). Pertama dirilis tahun 2004 oleh Canonical Ltd.
+                    </p>
                 </div>
 
-                <div class="md:col-span-2 text-sm space-y-4">
-                    <div>
-                        <h3 class="font-bold mb-1">Key Use</h3>
-                        <p class="text-xs leading-relaxed text-gray-700">It is maintained and funded by Offensive Security and contains hundreds of tools for various information security tasks, such as penetration testing, security research, and reverse engineering.</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold mb-1">Big Tool</h3>
-                        <p class="text-xs leading-relaxed text-gray-700">Tools include Metasploit, Nmap, Wireshark, and many others, pre-installed and ready to use for security professionals and ethical hackers.</p>
-                    </div>
+                <div>
+                    <h3 class="font-bold mb-1">Desktop Environment</h3>
+                    <p class="text-xs leading-relaxed text-gray-700">
+                        Desktop default-nya adalah <b>GNOME</b>. Varian resmi lain mencakup Kubuntu (KDE), Xubuntu (XFCE), dan Ubuntu MATE.
+                    </p>
                 </div>
-            </section>
-        </main>
-        
-        <footer class="text-center text-xs text-gray-500 py-4 border-t border-gray-300 mt-8">
+            </div>
+        </section>
+
+        <!-- LINUX MINT -->
+        <section id="mint" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 border-b border-gray-200 pb-6">
+            <div class="md:col-span-1 flex flex-col items-start space-y-2">
+                <h2 class="text-lg font-bold mt-4">Linux Mint</h2>
+                <img src="img/Mint.png" alt="Linux Mint Logo" class="w-48 h-48 object-contain">
+                <p class="text-xs text-gray-600 mt-1 text-justify">
+                    Linux Mint adalah distribusi yang elegan dan mudah digunakan, berbasis Ubuntu dan Debian.
+                </p>
+            </div>
+
+            <div class="md:col-span-2 text-sm space-y-4 text-justify">
+                <div>
+                    <h3 class="font-bold mb-1">Defaults</h3>
+                    <p class="text-xs leading-relaxed text-gray-700">
+                        Mint menawarkan pengalaman desktop klasik dengan dukungan multimedia dan tools bawaan.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-1">Desktop Environment</h3>
+                    <p class="text-xs leading-relaxed text-gray-700">
+                        Edisi utama menggunakan <b>Cinnamon</b>, terkenal dengan tampilan tradisional dan sangat dapat dikustomisasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- KALI LINUX -->
+        <section id="kali" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 border-b border-gray-200 pb-6">
+            <div class="md:col-span-1 flex flex-col items-start space-y-2">
+                <h2 class="text-lg font-bold mt-4">Kali Linux</h2>
+                <img src="img/kali.png" alt="Kali Linux" class="w-48 h-48 object-contain">
+                <p class="text-xs text-gray-600 mt-1 text-justify">
+                    Kali Linux adalah distribusi berbasis Debian yang dirancang untuk forensik digital dan penetration testing.
+                </p>
+            </div>
+
+            <div class="md:col-span-2 text-sm space-y-4 text-justify">
+                <div>
+                    <h3 class="font-bold mb-1">Key Use</h3>
+                    <p class="text-xs leading-relaxed text-gray-700">
+                        Dikembangkan oleh Offensive Security, berisi ratusan tools untuk keamanan seperti pentesting dan reverse engineering.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-1">Big Tools</h3>
+                    <p class="text-xs leading-relaxed text-gray-700">
+                        Termasuk Metasploit, Nmap, Wireshark, dan banyak alat lainnya.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center text-xs text-gray-500 py-4 border-t border-gray-300">
             <p>Kelompok - 9</p>
         </footer>
 
     </div>
 </body>
+
+<script>
+    // Tambah shadow ketika scroll ke bawah
+    window.addEventListener("scroll", function () {
+        const nav = document.getElementById("navbar");
+        if (window.scrollY > 10) {
+            nav.classList.add("shadow-lg");
+        } else {
+            nav.classList.remove("shadow-lg");
+        }
+    });
+</script>
 </html>
